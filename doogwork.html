@@ -1,0 +1,70 @@
+<!DOCKTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+        .coom{
+            width:95%;
+            height:100%;
+                background-color: black;
+            }
+            
+            .yapppp{
+                margin: 50% auto;
+                height: 200px;
+                width: 400px;
+                background-color: white;
+                color: black;
+                display: block;
+                text-align: center;
+                line-height: 200px;
+                font-size: 50px;
+                touch-action: manipulation;
+            }
+            
+            .background{
+                margin: 50% auto;
+                height: 700px;
+                width: 700px;
+                background-color: #FAA4BD;
+                background-image: url(https://acegif.com/wp-content/gif/confetti-40.gif);
+                background-size: cover;
+                background-position: center;
+                color: white;
+                font-size: 100px;
+                line-height: 700px;
+                text-align: center;
+                border-radius: 60px;
+                display: none;
+            }
+            
+            .yeshow{display: block;}
+            .noshow{display: none;}
+            .removeColor{background-color: black;}
+            .changeColor{background-color: #FAE3C6;}
+            
+        </style>
+    </head>
+    <body id="backcoom" class="coom">
+            <div id="pura" class="yapppp" onclick="puraSunshine();">
+                Ты молодец?
+            </div>
+            <div id="goodwork" class="background">
+                Умница!!! :з
+            </div>
+            
+            <script>
+                function puraSunshine(){
+                    alert("конечно же молодец :>");
+                    document.getElementById("pura").classList.remove("yeshow");
+                    document.getElementById("pura").classList.add("noshow");
+                    document.getElementById("goodwork").classList.remove("noshow");
+                    document.getElementById("goodwork").classList.add("yeshow");
+                    document.getElementById("backcoom").classList.remove("removeColor");
+                    document.getElementById("backcoom").classList.add("changeColor");
+                }
+            </script>
+            
+    </body>
+</html>
